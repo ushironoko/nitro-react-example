@@ -16,9 +16,6 @@
       "#nitro": ["./node_modules/nitropack-edge/dist/runtime/index"]
     }
   },
-  "include": [
-    "./src",
-    "./.nitro/types/nitro.d.ts"
-  ],
+  "include": ["./src", "./.nitro/types/nitro.d.ts", "handler.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
