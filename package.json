@@ -1,0 +1,26 @@
+{
+  "name": "nitro-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn vite:build && yarn moveViteAssets",
+    "dev": "nitro dev",
+    "moveViteAssets": "zx scripts/move-vite-assets.mjs",
+    "vite:build": "vite build",
+    "build": "nitro build"
+  },
+  "dependencies": {
+    "import-meta-resolve": "^1.1.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vite": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@vitejs/plugin-react": "^1.3.0",
+    "nitropack": "latest",
+    "zx": "^6.0.7"
+  }
+}
